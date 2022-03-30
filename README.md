@@ -13,17 +13,20 @@
 - For executing the script type bash filename.sh.
 
 ## Shell Command 
-- echo, 
-- cat, 
-- nano,
-- grep,
-- mkdir, 
-- touch, 
+- echo: move some data, usually text into a file.
+- cat: is veryful to see every thing inside a files. 
+- nano:Replace filename with the name of the file you want to edit.
+- grep:used to search text and strings in a given file.
+- mkdir:make directory 
+- touch: create blank files.
 - cd: Used to change the directory.
-- ls, 
-- which, 
-- find, 
-- pwd
+- ls: listing contents in extended form 
+- which:to search and locate the list of files and directories based on conditions you specify for files that match the arguments.
+- find:Find files that were changed during a certain period ·
+- pwd:present working directory.
+
+
+
 
 
 
