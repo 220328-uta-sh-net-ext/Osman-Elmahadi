@@ -12,7 +12,18 @@
 - Save the script file as filename.sh.
 - For executing the script type bash filename.sh.
 
-
+## Shell Command 
+- echo, 
+- cat, 
+- nano,
+- grep,
+- mkdir, 
+- touch, 
+- cd: Used to change the directory.
+- ls, 
+- which, 
+- find, 
+- pwd
 
 
 
