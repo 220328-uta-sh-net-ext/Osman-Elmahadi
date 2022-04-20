@@ -1,0 +1,25 @@
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.csproj.AssemblyReference.cache
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.AssemblyInfoInputs.cache
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.AssemblyInfo.cs
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.csproj.CoreCompileInputs.cache
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\RestaurantReviewUI.deps.json
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\RestaurantReviewUI.runtimeconfig.json
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\RestaurantReviewUI.exe
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewBL.deps.json
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewBL.pdb
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\RestaurantReviewUI.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\RestaurantReviewUI.pdb
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.csproj.CopyComplete
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\refint\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.pdb
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\ref\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewDL.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewModels.dll
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewDL.pdb
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewBL\bin\Debug\net6.0\Restaurant_reviewModels.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\refint\Restaurant_reviewBL.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewBL\obj\Debug\net6.0\Restaurant_reviewBL.pdb

@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Restaurant_reviewBL/1.0.0": {
+        "dependencies": {
+          "RestaurantReviewUI": "1.0.0"
+        },
+        "runtime": {
+          "Restaurant_reviewBL.dll": {}
+        }
+      },
+      "RestaurantReviewUI/1.0.0": {
+        "dependencies": {
+          "Restaurant_reviewDL": "1.0.0"
+        },
+        "runtime": {
+          "RestaurantReviewUI.dll": {}
+        }
+      },
+      "Restaurant_reviewDL/1.0.0": {
+        "dependencies": {
+          "Restaurant_reviewModels": "1.0.0"
+        },
+        "runtime": {
+          "Restaurant_reviewDL.dll": {}
+        }
+      },
+      "Restaurant_reviewModels/1.0.0": {
+        "runtime": {
+          "Restaurant_reviewModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Restaurant_reviewBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestaurantReviewUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Restaurant_reviewDL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Restaurant_reviewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

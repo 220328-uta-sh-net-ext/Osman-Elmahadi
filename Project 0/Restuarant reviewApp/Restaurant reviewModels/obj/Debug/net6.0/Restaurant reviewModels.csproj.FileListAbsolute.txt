@@ -1,0 +1,5 @@
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant reviewModels.csproj.AssemblyReference.cache
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant reviewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant reviewModels.AssemblyInfoInputs.cache
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant reviewModels.AssemblyInfo.cs
+C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant reviewModels.csproj.CoreCompileInputs.cache
