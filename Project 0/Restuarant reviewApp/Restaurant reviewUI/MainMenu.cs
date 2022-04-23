@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantReviewUI
+namespace Restaurant_reviewUI
 {
     /*MainMenu class implements IMenu interface but since it is a class it needs to 
     give actual implementation details to the respective methods*/
@@ -25,7 +25,7 @@ namespace RestaurantReviewUI
             throw new NotImplementedException();
         }
 
-        public class MainMenu : IMenu
+        class CMainMenu : IMenu
         {
 
             public void Display()
@@ -39,6 +39,16 @@ namespace RestaurantReviewUI
                 Console.WriteLine("Press <0> Exit");
             }
 
+            public override bool Equals(object? obj)
+            {
+                return base.Equals(obj);
+            }
+
+            public override int GetHashCode()
+            {
+                return base.GetHashCode();
+            }
+
             public string Login()
             {
                 string userInput = Console.ReadLine();
@@ -50,7 +60,11 @@ namespace RestaurantReviewUI
                     case "1":
                         return "Login";
                     case "2":
-                        return "Create";
+                        return "Create user";
+                    case "3":
+                        return "Display Restaurant";
+                    case "4":
+                        return "Create Restaurant";
                     default:
                         Console.WriteLine("Please input a valid response");
                         Console.WriteLine("Please press <enter> to continue");
@@ -58,6 +72,12 @@ namespace RestaurantReviewUI
                         return "MainMenu";
                 }
             }
+
+            public override string? ToString()
+            {
+                return base.ToString();
+            }
+
             public string UserChoice()
             {
                 string otherinpute = Console.ReadLine();
@@ -74,7 +94,7 @@ namespace RestaurantReviewUI
                     case "4":
                         return "Create Restaurant";
                     default:
-                        Console.WriteLine("View does not exist");
+                        Console.WriteLine("Please input a valid response");
                         Console.WriteLine("Please press <enter> to continue");
                         Console.ReadLine();
                         return "MainMenu";

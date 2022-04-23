@@ -1,4 +1,4 @@
-﻿using RestaurantReviewUI;
+﻿using Restaurant_reviewUI;
 bool repeat = true;
 IMenu menu = new MainMenu();
 
@@ -15,7 +15,7 @@ while (repeat)
                 Console.WriteLine("RestaurantLogin() Method implementation is in progress\n");
                 break;
             case "Display Restaurant":
-                //call RestaurantLogin method
+                //DisplayRestaurantOperations.GetAllRestaurants();
                 Console.WriteLine("RestaurantDisplay() Method implementation is in progress\n");
                 break;
             case "Create Restaurant":

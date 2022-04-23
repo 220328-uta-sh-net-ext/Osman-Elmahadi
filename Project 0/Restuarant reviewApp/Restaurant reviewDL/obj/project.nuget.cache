@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sW2/jUssLc3uyYjyirGWti97I1jE9KRrJAbyUHQZHBnf3e9kbQ5xrR7zG5s71Jd6hGBi+31SI4mt3g3/80qZ+Q==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewDL\\Restaurant_reviewDL.csproj",
+  "dgSpecHash": "FcJMnids50z2qdZSQoEuyo9L42cgX07XpXbAQm5jgVijewK1611iFHWU7ii7zgKj2lS3/D9JewoyYrwhikHy6A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewDL\\RestaurantDL.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -1,12 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RestaurantModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestaurantModels/1.0.0": {
+      "type": "project",
+      "path": "../Restaurant reviewModels/RestaurantModels.csproj",
+      "msbuildProject": "../Restaurant reviewModels/RestaurantModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj"
+      "RestaurantModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -16,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewDL\\Restaurant_reviewDL.csproj",
-      "projectName": "Restaurant_reviewDL",
-      "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewDL\\Restaurant_reviewDL.csproj",
+      "projectUniqueName": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewDL\\RestaurantDL.csproj",
+      "projectName": "RestaurantDL",
+      "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewDL\\RestaurantDL.csproj",
       "packagesPath": "C:\\Users\\data\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewDL\\obj\\",
+      "outputPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewDL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -41,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj": {
-              "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj"
+            "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewModels\\RestaurantModels.csproj": {
+              "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewModels\\RestaurantModels.csproj"
             }
           }
         }
@@ -74,16 +91,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant_reviewModels\\Restaurant_reviewModels.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

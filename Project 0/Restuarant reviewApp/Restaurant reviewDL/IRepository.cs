@@ -1,6 +1,6 @@
-﻿using Restaurant_reviewModels;
+﻿using System.Collections.Generic;
+using Restaurant_reviewModels;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +16,7 @@ namespace Restaurant_reviewDL
         /// <returns>The RestaurantReview added</returns>
        RestaurantReview AddRestaurantReview(RestaurantReview resta);
         /// <summary>
-        /// This method return all the Restaurants from the database
+        /// This method return all the RestaurantReviews from the database
         /// </summary>
         /// <returns>Returns a collection of RestaurentReview as Generic List</returns>
         List<RestaurantReview> GetAllRestaurants();

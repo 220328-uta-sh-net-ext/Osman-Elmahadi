@@ -1,7 +1,8 @@
 ﻿using Restaurant_reviewDL;
+using Restaurant_reviewModels;
 
 
-namespace RestaurantReviewUI
+namespace Restaurant_reviewUI
 {
     internal class DisplayRestaurantOperations
     {

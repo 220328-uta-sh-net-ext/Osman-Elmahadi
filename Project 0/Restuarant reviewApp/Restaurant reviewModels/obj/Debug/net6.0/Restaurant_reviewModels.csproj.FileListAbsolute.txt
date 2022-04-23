@@ -18,3 +18,15 @@ C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.dll
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\refint\Restaurant_reviewModels.dll
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.csproj.AssemblyReference.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.AssemblyInfoInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.AssemblyInfo.cs
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.csproj.CoreCompileInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\refint\Restaurant_reviewModels.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\Restaurant_reviewModels.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\bin\Debug\net6.0\Restaurant_reviewModels.deps.json
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\bin\Debug\net6.0\Restaurant_reviewModels.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\bin\Debug\net6.0\Restaurant_reviewModels.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewModels\obj\Debug\net6.0\ref\Restaurant_reviewModels.dll

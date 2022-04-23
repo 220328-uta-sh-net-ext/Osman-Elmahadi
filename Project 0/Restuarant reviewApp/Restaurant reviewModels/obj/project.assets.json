@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewModels\\Restaurant_reviewModels.csproj",
-      "projectName": "Restaurant_reviewModels",
-      "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewModels\\Restaurant_reviewModels.csproj",
+      "projectUniqueName": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewModels\\RestaurantModels.csproj",
+      "projectName": "RestaurantModels",
+      "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewModels\\RestaurantModels.csproj",
       "packagesPath": "C:\\Users\\data\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Training Practise\\C#\\Restuarant reviewApp\\Restaurant reviewModels\\obj\\",
+      "outputPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Restuarant reviewApp\\Restaurant reviewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

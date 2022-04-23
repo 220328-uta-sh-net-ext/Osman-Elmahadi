@@ -3,3 +3,23 @@ C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaura
 C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.AssemblyInfoInputs.cache
 C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.AssemblyInfo.cs
 C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.csproj.CoreCompileInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.csproj.AssemblyReference.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.AssemblyInfoInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.AssemblyInfo.cs
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.csproj.CoreCompileInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewUI.exe
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewUI.deps.json
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewUI.runtimeconfig.json
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewUI.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewUI.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewDL.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewModels.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewDL.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\bin\Debug\net6.0\Restaurant_reviewModels.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.csproj.CopyComplete
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\refint\Restaurant_reviewUI.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\Restaurant_reviewUI.genruntimeconfig.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\ref\Restaurant_reviewUI.dll

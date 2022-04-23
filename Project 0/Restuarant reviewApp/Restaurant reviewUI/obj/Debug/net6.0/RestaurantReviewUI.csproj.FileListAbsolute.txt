@@ -16,3 +16,6 @@ C:\Users\data\Documents\training\Osman-Elmahadi\C#\Restuarant reviewApp\Restaura
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\RestaurantReviewUI.dll
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\refint\RestaurantReviewUI.dll
 C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Training Practise\C#\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\RestaurantReviewUI.pdb
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\RestaurantReviewUI.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\refint\RestaurantReviewUI.dll
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\Restaurant reviewUI\obj\Debug\net6.0\RestaurantReviewUI.pdb

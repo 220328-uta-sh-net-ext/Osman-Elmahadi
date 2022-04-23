@@ -27,7 +27,7 @@ namespace Restaurant_reviewModels
             }
         }
 
-        public Restaurant()
+        public void Restaurant()
         {
             Name = "Reema Deli";
             Address = "1370 Afton St, Houston77055";

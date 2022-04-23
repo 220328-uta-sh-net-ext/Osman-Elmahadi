@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantReviewUI
+namespace Restaurant_reviewUI
 {
     /*
      Interface are one of the best way to implement abstraction
      Every method is inplicitly abstract meaning you don't have to define your method
      Every method in interface is by default public so don't use public as a keyword
      */
-    internal interface IMenu
+     public interface IMenu
     {
         /// <summary>
         /// Will display themenu and user choices in the terminal

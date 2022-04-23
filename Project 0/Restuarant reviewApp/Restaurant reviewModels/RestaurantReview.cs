@@ -9,17 +9,15 @@
 
         //Resturant has a name, Adress, Rating 
 
-        private List<Restaurant> _reviews;
-        public List<Restaurant> Reviews
-        {
-            get { return _reviews; }
+        private List<Restaurant> _restaurants;
+        public List<Restaurant> Restaurants {
+            get { return _restaurants; }
 
-            set
-            {
+            set {
                 if (value.Count <= 5)
-                    _reviews = value;
+                    _restaurants = value;
                 else
-                    throw new Exception("Rating can not larger that 5.");
+                    throw new Exception("Rating can not larger that 5");
             }
         }
 
@@ -28,7 +26,10 @@
             Name = "Leena Deli";
             Address = " 1370 Afton St";
             AverageRating = 0;
-
+            _restaurants = new List<Restaurant>()
+            {
+                new Restaurant()
+            };
         }
         public override string ToString()
         {
