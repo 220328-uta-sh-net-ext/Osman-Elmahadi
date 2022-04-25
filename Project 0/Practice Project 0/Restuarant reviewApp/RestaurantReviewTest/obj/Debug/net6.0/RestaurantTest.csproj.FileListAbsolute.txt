@@ -1,0 +1,6 @@
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\obj\Debug\net6.0\RestaurantTest.csproj.AssemblyReference.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\obj\Debug\net6.0\RestaurantTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\obj\Debug\net6.0\RestaurantTest.AssemblyInfoInputs.cache
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\obj\Debug\net6.0\RestaurantTest.AssemblyInfo.cs
+C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Restuarant reviewApp\RestaurantReviewTest\obj\Debug\net6.0\RestaurantTest.csproj.CoreCompileInputs.cache
