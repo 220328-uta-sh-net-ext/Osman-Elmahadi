@@ -1,7 +1,26 @@
 ﻿using RestaurantUI;
 using Serilog;
+using RestaurantBL;
+using RestaurantDL;
 
-//MenuFactory.GetMenu("main").Start();
+
+//create and configure our logger
+Log.Logger = new LoggerConfiguration()
+    
+    .WriteTo.File("./Logs/user.txt").MinimumLevel.Debug().MinimumLevel.Information()// we want to save the ;ogs in this file
+    .CreateLogger();
+
+// other approaches to this besides "gitignored file"...
+//  - command-line arguments (in this file with top-level statements, invisible "args" variable
+//  - environment variab
+//string connectionStringFilePath = "../../../../RestaurantDL/connection-string.txt";
+string connectionStringFilePath = "../RestaurantDL/connection-string.txt";
+string connectionString = File.ReadAllText(connectionStringFilePath);
+
+IRepo repository = new SqlRepository(connectionString);
+IRestaurantLogic logic = new RestaurantLogic(repository);
+RestaurantOperations operations = new(repository);
+
 bool repeat = true;
 IMenu menu = new MainMenu();
 
@@ -12,23 +31,27 @@ while (repeat)
 
     switch (ans)
     {
-        case "SearchRestaurant":
+       
+        case "Search Restaurant Menu":
             //call Search Restaurant method
-            Log.Debug("Displaying SearchRestaurant menu to the user");
-            menu = new SearchRestaurantMenu();
+            Log.Debug("Displaying Search Restaurant Menu ");
+            //menu = new SearchRestaurantMenu(logic);
             break;
-        case "AddRestaurant":
-            Log.Debug("Displaying AddRestaurant Menu to the user");
-            menu = new AddRestaurantMenu();
+        case "Add Restaurants Menu":
+            Log.Debug("Displaying Add Restaurants Menu to the user");
+            menu = new AddRestaurantMenu(logic);
             break;
-        case "GetAllRestaurants":
-            Log.Debug("Displaying all Restaurants to the user");
-            Console.WriteLine("--------------Retreiving all Restaurants---------------");
-            RRBL.GetAllRestaurant();
+        case "Get All Restaurant ":
+            Log.Debug("Displaying Get All Restaurant ");
+            Console.WriteLine("--------------Retreiving all restaurants---------------");
+            operations.GetAllRestaurants();
             break;
-        case "MainMenu":
-            Log.Debug("Displaying Main menu to the user");
-            menu=new MainMenu();
+        case "Displaying Main menu to the user ":
+            Log.Debug("Displaying Main menu to the user ");
+            menu = new MainMenu();
+            break;
+        case "Login":
+            Log.Debug("Displaying Login");
             break;
         case "Exit":
             Log.Debug("Exiting the application");

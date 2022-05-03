@@ -1,14 +1,25 @@
-﻿namespace RestaurantDL;
-public interface IRepo
+﻿using RestaurantModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RestaurantDL
 {
-    List<Restaurant> GetAllRestaurants();
-
-    void AddRestaurant(Restaurant restaurantToAdd);
-
-    void AddReview(int restaurantId, Review reviewToAdd);
-
-    List<Restaurant> SearchRestaurants(string searchTerm);
-
-    bool IsDuplicate(Restaurant restaurant);
+    public interface IRepo
+    {
+        /// <summary>
+        /// Adds a resturant to the database
+        /// </summary>
+        /// <param name="rest"></param>
+        /// <returns></returns>
+        Restaurant AddRestaurant(Restaurant rest);
+        /// <summary>
+        /// The method returns all restaurants from the database
+        /// </summary>
+        /// <returns></returns>
+        List<Restaurant> GetAllRestaurants();
+        //RestaurantReviews AddReview(int restaurantId, RestaurantReviews reviewToAdd);
+    }
 }
-

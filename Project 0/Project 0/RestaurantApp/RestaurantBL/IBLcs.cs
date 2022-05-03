@@ -1,6 +1,6 @@
 ﻿namespace RestaurantBL;
 
-public interface IBL
+/*public interface IBL
 {
     List<Restaurant> SearchRestaurants(string searchString);
 
@@ -8,6 +8,6 @@ public interface IBL
 
     void AddRestaurant(Restaurant restaurantToAdd);
 
-    void AddReview(int restaurantId, Review reviewToAdd);
+    void AddReview(int restaurantId, RestaurantReviews reviewToAdd);
 
-}
+}*/

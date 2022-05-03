@@ -1,4 +1,4 @@
-﻿namespace RestaurantDL;
+﻿/*namespace RestaurantDL;
 public class FileRepo : IRepo
 {
     public FileRepo()
@@ -16,7 +16,7 @@ public class FileRepo : IRepo
         throw new NotImplementedException();
     }
 
-    public void AddReview(int restaurantId, Review reviewToAdd)
+    public void AddReview(int restaurantId, RestaurantReviews reviewToAdd)
     {
         throw new NotImplementedException();
     }
@@ -30,4 +30,29 @@ public class FileRepo : IRepo
     {
         throw new NotImplementedException();
     }
-}
+
+    Restaurant IRepo.AddRestaurant(Restaurant rest)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Restaurant> GetRestaurantInfo()
+    {
+        throw new NotImplementedException();
+    }
+
+    RestaurantReviews IRepo.AddReview(int restaurantId, RestaurantReviews reviewToAdd)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<RestaurantReviews> GetReviewInfo()
+    {
+        throw new NotImplementedException();
+    }
+
+    public User AddUser(User user)
+    {
+        throw new NotImplementedException();
+    }
+}*/

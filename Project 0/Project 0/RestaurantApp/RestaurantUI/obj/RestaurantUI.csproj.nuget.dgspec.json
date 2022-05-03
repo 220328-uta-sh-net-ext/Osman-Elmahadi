@@ -116,6 +116,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
@@ -226,8 +230,8 @@
               "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantBL\\RestaurantBL.csproj": {
                 "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantBL\\RestaurantBL.csproj"
               },
-              "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantModels\\RestaurantModels.csproj": {
-                "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantModels\\RestaurantModels.csproj"
+              "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantDL\\RestaurantDL.csproj": {
+                "projectPath": "C:\\Users\\data\\Documents\\training\\training-code\\Osman-Elmahadi\\Project 0\\Project 0\\RestaurantApp\\RestaurantDL\\RestaurantDL.csproj"
               }
             }
           }
@@ -245,6 +249,10 @@
             "Serilog": {
               "target": "Package",
               "version": "[2.11.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

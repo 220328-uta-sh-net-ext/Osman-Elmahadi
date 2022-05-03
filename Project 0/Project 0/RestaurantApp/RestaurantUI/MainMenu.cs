@@ -1,64 +1,48 @@
 ﻿namespace RestaurantUI;
-public class MainMenu : IMenu
+class MainMenu : IMenu
 {
-    private IBL _bl;
-
-    public MainMenu(IBL bl)
+    public void Display()
     {
-        _bl = bl;
-    }
-
-    public MainMenu()
-    {
-    }
-
-    public void Start()
-    {
-        Console.WriteLine("Welcome to Restaurant Reviews!");
+        Console.WriteLine("Welcome to this Restuarant Application.");
         Console.WriteLine("Please choose to login or create a user.");
-        Console.WriteLine("Press <4> SearchRestaurant menu to the user");
-        Console.WriteLine("Press <3> AddRestaurant Menu to the user");
-        Console.WriteLine("Press <2> all Restaurants to the user");
-        Console.WriteLine("Press <1> Main menu to the user");
+        Console.WriteLine("Press <5> Search Restaurant Menu");
+        Console.WriteLine("Press <4> Add Restaurants Menu");
+        Console.WriteLine("Press <3> Get All Restaurant ");
+        Console.WriteLine("Press <2> Displaying Main menu to the user");
+        Console.WriteLine("Press <1> Login");
         Console.WriteLine("Press <0> Exit");
     }
 
-   
     public string UserChoice()
     {
-        string userInput = Console.ReadLine();
+        if (Console.ReadLine() is not string userInput)
+            throw new InvalidDataException("end of input");
 
         switch (userInput)
         {
             case "0":
                 return "Exit";
             case "1":
-                return "Main menu to the user";
+                return "Login";
             case "2":
-                return "all Restaurants to the user";
+                return "Displaying Main menu to the user";
             case "3":
-                return "AddRestaurant Menu to the user";
+                return "Get All Restaurant ";
             case "4":
-                return "SearchRestaurant menu to the user";
+                return "Add Restaurants Menu";
+            case "5":
+                return "Search Restaurant Menu";
             default:
                 Console.WriteLine("Please input a valid response");
                 Console.WriteLine("Please press <enter> to continue");
                 Console.ReadLine();
                 return "MainMenu";
+
         }
     }
-
-    public void Display()
-    {
-        Console.WriteLine("Welcome to Restaurant Reviews!");
-        Console.WriteLine("Please choose to login or create a user.");
-        Console.WriteLine("Press <4> SearchRestaurant menu to the user");
-        Console.WriteLine("Press <3> AddRestaurant Menu to the user");
-        Console.WriteLine("Press <2> all Restaurants to the user");
-        Console.WriteLine("Press <1> Main menu to the user");
-        Console.WriteLine("Press <0> Exit");
-    }
 }
+
+
 
 
 
