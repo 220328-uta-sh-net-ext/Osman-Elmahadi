@@ -1,0 +1,10 @@
+2022-05-03 11:05:19.867 -05:00 [INF] Adding a restaurant - ?
+2022-05-03 11:05:20.988 -05:00 [WRN] failed to add restaurant
+2022-05-03 11:06:16.915 -05:00 [INF] Adding a restaurant - hi
+2022-05-03 11:06:16.984 -05:00 [WRN] failed to add restaurant
+2022-05-03 18:33:34.375 -05:00 [INF] Adding a restaurant - ggg
+2022-05-03 18:33:35.425 -05:00 [WRN] failed to add restaurant
+2022-05-03 22:41:46.877 -05:00 [INF] Adding a restaurant - hjk
+2022-05-03 22:41:48.040 -05:00 [INF] Restaurant added successfully
+2022-05-04 18:12:31.618 -05:00 [INF] Adding a restaurant -  d
+2022-05-04 18:12:32.820 -05:00 [INF] Restaurant added successfully

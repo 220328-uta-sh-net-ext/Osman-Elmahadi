@@ -19,7 +19,7 @@ string connectionString = File.ReadAllText(connectionStringFilePath);
 
 IRepo repository = new SqlRepository(connectionString);
 IRestaurantLogic logic = new RestaurantLogic(repository);
-RestaurantOperations operations = new(repository);
+//RestaurantOperations operations = new(repository);
 
 bool repeat = true;
 IMenu menu = new MainMenu();
@@ -35,7 +35,33 @@ while (repeat)
         case "Search Restaurant Menu":
             //call Search Restaurant method
             Log.Debug("Displaying Search Restaurant Menu ");
+            Console.WriteLine("input <name> <city> <state>");
+            //WriteLine(<name> <city> <state>);
+            //What you are looking for <name> <city> <state>
+            //get user input us using ReadL(); set = k
+            string k = "name";
+            Console.WriteLine($"input Restaurant {k} here:");
+            string n = Console.ReadLine();
             //menu = new SearchRestaurantMenu(logic);
+            List<RestaurantModels.Restaurant>? results = logic.SearchRestaurant(n,k);
+            if (k == "name")
+                results = logic.SearchRestaurant(n, k);
+            else if (k == "state")
+                results = logic.SearchRestaurant(n, k);
+            else if (k == "city")
+                results = logic.SearchRestaurant(n, k);
+            else Console.WriteLine("Error ...");
+
+            if (results.Count > 0)
+            {
+                foreach (RestaurantModels.Restaurant? r in results)
+                {
+                    Console.WriteLine(r.ToString());
+
+                }
+            }
+            else
+                Console.WriteLine("Restaurant Not Found");
             break;
         case "Add Restaurants Menu":
             Log.Debug("Displaying Add Restaurants Menu to the user");
@@ -44,13 +70,32 @@ while (repeat)
         case "Get All Restaurant ":
             Log.Debug("Displaying Get All Restaurant ");
             Console.WriteLine("--------------Retreiving all restaurants---------------");
-            operations.GetAllRestaurants();
+            //operations.GetAllRestaurants();
+             results = logic.SearchRestaurant("","");
+        
+            if (results.Count > 0)
+            {
+                foreach (RestaurantModels.Restaurant? r in results)
+                {
+                    Console.WriteLine(r.ToString());
+                    
+                }
+            }
+            else
+                Console.WriteLine("Restaurant Not Found");
+
+           
+
             break;
         case "Displaying Main menu to the user ":
             Log.Debug("Displaying Main menu to the user ");
             menu = new MainMenu();
             break;
         case "Login":
+            Log.Debug("Displaying Login");
+            break;
+        case "MainMenu":
+            menu = new MainMenu();
             Log.Debug("Displaying Login");
             break;
         case "Exit":

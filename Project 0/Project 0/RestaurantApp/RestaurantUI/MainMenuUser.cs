@@ -1,14 +1,20 @@
-﻿namespace RestaurantUI;
-class MainMenu : IMenu
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RestaurantUI;
+class MainMenuUser : IMenuUser
 {
     public void Display()
     {
         Console.WriteLine("Welcome to this Restuarant Application.");
         Console.WriteLine("Please choose to login or create a user.");
-        Console.WriteLine("Press <5> Search Restaurant Menu");
-        Console.WriteLine("Press <4> Add Restaurants Menu");
-        Console.WriteLine("Press <3> Get All Restaurant ");
-        Console.WriteLine("Press <2> Do something else here like add user");
+      
+        Console.WriteLine("Press <4> Add User Name");
+        Console.WriteLine("Press <3> Email ");
+        Console.WriteLine("Press <2> Password");
         Console.WriteLine("Press <1> Login");
         Console.WriteLine("Press <0> Exit");
     }
@@ -25,26 +31,19 @@ class MainMenu : IMenu
             case "1":
                 return "Login";
             case "2":
-                return "Displaying Main menu to the user";
+                return "Password";
             case "3":
-                return "Get All Restaurant ";
+                return "Email ";
             case "4":
-                return "Add Restaurants Menu";
-            case "5":
-                return "Search Restaurant Menu";
+                return "Add User Name";
+            
             default:
                 Console.WriteLine("Please input a valid response");
                 Console.WriteLine("Please press <enter> to continue");
                 Console.ReadLine();
-                return "MainMenu";
+                return "MainMenuUser";
 
         }
     }
 }
-
-
-
-
-
-    
 

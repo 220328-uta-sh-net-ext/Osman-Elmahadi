@@ -16,7 +16,7 @@ public class TestDummyForTest
     public void TestAdd()
     {
         // note that comparing floating-point numbers for exact equality is not really reliable
-        double a = 10.5, b = 20.4, expected = 30.9;
+        double a = 14.3, b = 16.4, expected = 30.7;
         double actual = obj.Add(a, b);
         Assert.Equal(expected, actual);
         Assert.Equal(10 + 20, obj.Add(new double[] { 10, 20 }));//tested for int values

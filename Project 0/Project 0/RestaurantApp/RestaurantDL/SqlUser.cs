@@ -11,21 +11,21 @@ using System.Data;
 namespace RestaurantDL
 {
 
-    public class SqlRepository : IRepo
+    public class SqlUser : IRepo
     {
         /// <summary>
         /// This is referencing the connection string from program.cs
         /// which is referencing the connection string from the .txt file.
         /// </summary>
         readonly string connectionString;
-        public SqlRepository(string connectionString)
+        public SqlUser(string connectionString)
         {
             this.connectionString = connectionString;
         }
-          /// <summary>
-          /// Implementation for method that returns all restaurants from the database.
-          /// </summary>
-          /// <returns></returns>
+        /// <summary>
+        /// Implementation for method that returns all restaurants from the database.
+        /// </summary>
+        /// <returns></returns>
         /*public List<Restaurant> GetAllRestaurantsConnected()
         {
             string commandString = "SELECT * FROM Restaurant;";
@@ -62,9 +62,9 @@ namespace RestaurantDL
             /// </summary>
             /// <param name="r"></param>
             /// <returns></returns>*/
-        public List<Restaurant> GetAllRestaurants()
+        public List<User> GetAllUsers()
         {
-            string commandString = "SELECT * FROM Restaurants;";
+            string commandString = "SELECT * FROM Users;";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
@@ -75,54 +75,48 @@ namespace RestaurantDL
             //connection.Close();
             using SqlDataReader reader = command.ExecuteReader();
 
-            var restaurants = new List<Restaurant>();
+            var users = new List<User>();
             //DataColumn levelColumn = dataSet.Tables[0].Columns[1];
             while (reader.Read())
             {
-                restaurants.Add(new Restaurant
+                users.Add(new User
                 {
                     Name = reader.GetString(0),
-                    Type = reader.GetString(1),
-                    City = reader.GetString(2),
-                    State = reader.GetString(3),
-                    Phone = reader.GetInt32(4),
-                    Reviews = reader.GetString(5),
-                    Rating = reader.GetInt32(6)
+                    Email = reader.GetString(1),
+                    Password= reader.GetString(2),
+                   
                 });
             }
-            return restaurants;
+            return users;
         }
         /// <summary>
         /// Implementation for the method that adds restaurants to the SQL database on azure.
         /// </summary>
         /// <param name="r"></param>
         /// <returns></returns>
-        public Restaurant AddRestaurant(Restaurant rest)
+        public User AddUser(User rest)
         {
-            string commandString = "INSERT INTO Restaurants (Name, Type, City, State, Phone, Reviews,Rating) " +
-                "VALUES (@name, @type, @city, @state, @phone, @reviews,@rating);";
+            string commandString = "INSERT INTO Restaurants (Name, Email, Password) " +
+                "VALUES (@name, @email, @password);";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@name", rest.Name);
-            command.Parameters.AddWithValue("@type", rest.Type);
-            command.Parameters.AddWithValue("@city", rest.City);
-            command.Parameters.AddWithValue("@state", rest.State);
-            command.Parameters.AddWithValue("@phone", rest.Phone);
-            command.Parameters.AddWithValue("@reviews", rest.Reviews);
-            command.Parameters.AddWithValue("@rating", rest.Rating);
+            command.Parameters.AddWithValue("@type", rest.Email);
+            command.Parameters.AddWithValue("@city", rest.Password);
+           
             connection.Open();
             command.ExecuteNonQuery();
 
             return rest;
         }
 
-        public User AddUser(User u)
+        public Restaurant AddRestaurant(Restaurant rest)
         {
             throw new NotImplementedException();
         }
 
-        public List<User>? GetAllUsers()
+        public List<Restaurant> GetAllRestaurants()
         {
             throw new NotImplementedException();
         }

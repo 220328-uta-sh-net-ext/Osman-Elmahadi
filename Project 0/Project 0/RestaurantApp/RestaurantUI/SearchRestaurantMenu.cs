@@ -34,7 +34,7 @@ class SearchRestaurantMenu : IMenu
                 Console.Write("Please enter the name ");
                 if (Console.ReadLine() is not string name)
                     throw new InvalidDataException("end of input");
-                List<RestaurantModels.Restaurant>? results = logic.SearchRestaurant(name);
+                List<RestaurantModels.Restaurant>? results = logic.SearchRestaurant(name,"");
                 if (results.Count > 0)
                 {
                     foreach (RestaurantModels.Restaurant? r in results)

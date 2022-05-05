@@ -4,7 +4,7 @@ using RestaurantModels;
 namespace RestaurantUI;
 
 class RestaurantOperations
-{
+{/*
     readonly IRepo repository;
 
     public RestaurantOperations(IRepo repository)
@@ -44,5 +44,5 @@ class RestaurantOperations
 
     repository.AddRestaurant(restaurant1);
     }
-
+*/
 }

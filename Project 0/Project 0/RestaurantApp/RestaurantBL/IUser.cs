@@ -1,4 +1,8 @@
-﻿using RestaurantModels;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace RestaurantBL;
 /// <summary>
@@ -6,7 +10,7 @@ namespace RestaurantBL;
 /// What kind of processing? That all depends on the type of functionality you will be doing
 /// It can also hold any computation logic like calculating average, max or min values etc....
 /// </summary>
-public interface IRestaurantLogic
+public interface IUserLogic
 {
     /// <summary>
     /// Add pokemon to the database
@@ -15,13 +19,13 @@ public interface IRestaurantLogic
     /// </summary>
     /// <param name="r"></param>
     /// <returns></returns>
-    Restaurant AddRestaurant(Restaurant r);
+    User AddUser(User u);
 
     /// <summary>
     /// We will give the list of restaurants that are related to searched name
     /// </summary>
     /// <param name="name">This name parameter is used to filter restaurants</param>
     /// <returns>Give the list of filtered Restaurants via name</returns>
-    List<Restaurant> SearchRestaurant(string name, string n);
+    List<User> SearchUser(string name, string n);
 
 }

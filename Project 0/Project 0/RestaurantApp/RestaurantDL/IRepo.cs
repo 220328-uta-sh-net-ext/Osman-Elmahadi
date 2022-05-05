@@ -20,6 +20,7 @@ namespace RestaurantDL
         /// </summary>
         /// <returns></returns>
         List<Restaurant> GetAllRestaurants();
-        //RestaurantReviews AddReview(int restaurantId, RestaurantReviews reviewToAdd);
+        User AddUser(User u);
+        List<User>? GetAllUsers();
     }
 }

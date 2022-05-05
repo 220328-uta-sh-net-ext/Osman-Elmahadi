@@ -5,7 +5,7 @@ using RestaurantModels;
 namespace RestaurantBL;
 public class RestaurantLogic : IRestaurantLogic
 {
-    const int MaxRestaurants = 4000;
+   // const int MaxRestaurants = 4000;
     readonly IRepo repo;
 
     public RestaurantLogic(IRepo repo)
@@ -15,33 +15,30 @@ public class RestaurantLogic : IRestaurantLogic
 
     public Restaurant AddRestaurant(Restaurant r)
     {
-        var random = new Random();
+        //var random = new Random();
         //process data to meet conditions
         //It will either substract or add a range from -5 to 5
-       // r.Name = random.Next(-5, 5);
-        r.Rating = random.Next(-5, 5);
-        r.Note = "";
+        // r.Name = random.Next(-5, 5);
+        //r.Rating = random.Next(-5, 5);
+        // r.Note = "";
+        return repo.AddRestaurant(r);
 
-        //Validation process
-        List<Restaurant>? restaurants = repo.GetAllRestaurants();
-        if (restaurants.Count < MaxRestaurants)
-        {
-            return repo.AddRestaurant(r);
-        }
-        else
-        {
-            throw new Exception("You cannot exceed to add more than 4 restaurants");
-        }
     }
 
-    public List<Restaurant> SearchRestaurant(string name)
+    public List<Restaurant> SearchRestaurant(string name,string n)
     {
         List<Restaurant>? restaurants = repo.GetAllRestaurants();
         /*var filteredPokemons=from r in restaurants               //Query Syntax
                                 where r.Name.Contains(name)
                                 select r;*/
-
-        var filteredRestaurants = restaurants.Where(p => p.Name.Contains(name)).ToList(); // Method Syntax
+        var filteredRestaurants = restaurants.Where(r => r.City.Contains(name)).ToList();
+        if(n == "name")
+        filteredRestaurants = restaurants.Where(r => r.Name.Contains(name)).ToList();
+       else if (n == "state")
+        filteredRestaurants = restaurants.Where(r => r.State.Contains(name)).ToList();
+        else if (n == "city")
+            filteredRestaurants = restaurants.Where(r => r.City.Contains(name)).ToList();
+        // Method Syntax
 
      
         return filteredRestaurants;
