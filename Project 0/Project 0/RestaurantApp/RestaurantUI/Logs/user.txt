@@ -8,3 +8,15 @@
 2022-05-03 22:41:48.040 -05:00 [INF] Restaurant added successfully
 2022-05-04 18:12:31.618 -05:00 [INF] Adding a restaurant -  d
 2022-05-04 18:12:32.820 -05:00 [INF] Restaurant added successfully
+2022-05-05 20:45:02.199 -05:00 [INF] Adding a restaurant -  Pita
+2022-05-05 20:45:02.376 -05:00 [INF] Restaurant added successfully
+2022-05-05 21:20:30.996 -05:00 [INF] Adding a restaurant -  Salt n Straw
+2022-05-05 21:20:31.163 -05:00 [INF] Restaurant added successfully
+2022-05-06 00:12:12.154 -05:00 [INF] Adding a restaurant -  Barnaby
+2022-05-06 00:12:13.561 -05:00 [WRN] failed to add restaurant
+2022-05-06 09:53:22.911 -05:00 [INF] Adding a restaurant -  Subway
+2022-05-06 09:53:23.667 -05:00 [INF] Restaurant added successfully
+2022-05-06 10:09:02.049 -05:00 [INF] Adding a restaurant -  Wendy
+2022-05-06 10:09:02.185 -05:00 [INF] Restaurant added successfully
+2022-05-07 00:02:12.807 -05:00 [INF] Adding a restaurant -  Aseel
+2022-05-07 00:02:13.005 -05:00 [INF] Restaurant added successfully

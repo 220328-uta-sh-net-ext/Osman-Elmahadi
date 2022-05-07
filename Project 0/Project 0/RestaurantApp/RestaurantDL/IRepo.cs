@@ -20,6 +20,10 @@ namespace RestaurantDL
         /// </summary>
         /// <returns></returns>
         List<Restaurant> GetAllRestaurants();
+
+    }
+    public interface IuserRepo
+    {
         User AddUser(User u);
         List<User>? GetAllUsers();
     }

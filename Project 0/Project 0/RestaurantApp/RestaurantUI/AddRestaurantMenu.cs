@@ -26,10 +26,10 @@ namespace RestaurantUI
         {
             Console.WriteLine("Enter Restaurant Information");
             Console.WriteLine("<6> Name - " + newRestaurant.Name);
-            Console.WriteLine("<5> type - " + newRestaurant.Type);
+            Console.WriteLine("<5> Reviews - " + newRestaurant.Reviews);
             Console.WriteLine("<4> city - " + newRestaurant.City);
             Console.WriteLine("<3> state - " + newRestaurant.State);
-            Console.WriteLine("<2> phone - " + newRestaurant.Phone);
+            Console.WriteLine("<2> Rating - " + newRestaurant.Rating);
             Console.WriteLine("<1> Save");
             Console.WriteLine("<0> Go Back");
         }
@@ -59,23 +59,23 @@ namespace RestaurantUI
                     }
                     return "MainMenu";
                 case "2":
-                    Console.Write("Please enter address int ");
-                    newRestaurant.Phone = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Please enter Rating ");
+                    newRestaurant.Rating = Convert.ToInt32(Console.ReadLine());
                     return "AddRestaurant";
                 case "3":
-                    Console.Write("Please enter phone string ");
+                    Console.Write("Please enter State ");
                     newRestaurant.State = Console.ReadLine();
                     return "AddRestaurant";
                 case "4":
-                    Console.Write("Please enter a name! string");
+                    Console.Write("Please enter City");
                     newRestaurant.City = Console.ReadLine();
                     return "AddRestaurant";
                 case "5":
-                    Console.Write("Please enter a name! string");
-                    newRestaurant.Type = Console.ReadLine();
+                    Console.Write("Please enter Reviews");
+                    newRestaurant.Reviews = Console.ReadLine();
                     return "AddRestaurant";
                 case "6":
-                    Console.Write("Please enter a name! string");
+                    Console.Write("Please enter Name");
                     newRestaurant.Name = Console.ReadLine();
                     return "AddRestaurant";
                 /// Add more cases for any other attributes of Restaurant

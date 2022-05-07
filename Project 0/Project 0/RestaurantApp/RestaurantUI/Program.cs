@@ -13,7 +13,8 @@ Log.Logger = new LoggerConfiguration()
 // other approaches to this besides "gitignored file"...
 //  - command-line arguments (in this file with top-level statements, invisible "args" variable
 //  - environment variab
-//string connectionStringFilePath = "../../../../RestaurantDL/connection-string.txt";
+//string connectionStringFilePath = "../../../../training-code/Osman-Elmahadi/Project 0/Project 0/RestaurantApp/RestaurantDL/connection-string.txt";
+//C:\Users\data\Documents\training\training-code\Osman-Elmahadi\Project 0\Project 0\RestaurantApp\RestaurantDL
 string connectionStringFilePath = "../RestaurantDL/connection-string.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
 
@@ -22,6 +23,22 @@ IRestaurantLogic logic = new RestaurantLogic(repository);
 //RestaurantOperations operations = new(repository);
 
 bool repeat = true;
+Console.WriteLine("Please enter your username");
+string userinput = Console.ReadLine();
+string username = "?";
+/// <summary>
+/// validating userinput variable and setting username to guest_user by default 
+/// if user input is null or empty
+/// </summary>
+if (string.IsNullOrEmpty(userinput))
+{
+    username = "guest_user";
+}
+else
+{
+    username = userinput;
+}
+Console.WriteLine($"Welcome {username}");
 IMenu menu = new MainMenu();
 
 while (repeat)
@@ -36,9 +53,7 @@ while (repeat)
             //call Search Restaurant method
             Log.Debug("Displaying Search Restaurant Menu ");
             Console.WriteLine("input <name> <city> <state>");
-            //WriteLine(<name> <city> <state>);
-            //What you are looking for <name> <city> <state>
-            //get user input us using ReadL(); set = k
+            
             string k = "name";
             Console.WriteLine($"input Restaurant {k} here:");
             string n = Console.ReadLine();
@@ -84,7 +99,6 @@ while (repeat)
             else
                 Console.WriteLine("Restaurant Not Found");
 
-           
 
             break;
         case "Displaying Main menu to the user ":
@@ -98,6 +112,9 @@ while (repeat)
             menu = new MainMenu();
             Log.Debug("Displaying Login");
             break;
+       // case "user":
+          //  menu = new MainMenuUser();
+           // break;
         case "Exit":
             Log.Debug("Exiting the application");
             Log.CloseAndFlush();

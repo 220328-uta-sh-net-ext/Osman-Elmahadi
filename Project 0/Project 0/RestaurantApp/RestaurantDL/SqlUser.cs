@@ -5,13 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RestaurantModels;
 using System.Data;
 
 namespace RestaurantDL
 {
 
-    public class SqlUser : IRepo
+    public class SqlUser : IuserRepo
     {
         /// <summary>
         /// This is referencing the connection string from program.cs
@@ -64,7 +63,7 @@ namespace RestaurantDL
             /// <returns></returns>*/
         public List<User> GetAllUsers()
         {
-            string commandString = "SELECT * FROM Users;";
+            string commandString = "SELECT * FROM _Users;";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
@@ -83,7 +82,7 @@ namespace RestaurantDL
                 {
                     Name = reader.GetString(0),
                     Email = reader.GetString(1),
-                    Password= reader.GetString(2),
+                    Password= reader.GetString(2)
                    
                 });
             }
@@ -96,14 +95,14 @@ namespace RestaurantDL
         /// <returns></returns>
         public User AddUser(User rest)
         {
-            string commandString = "INSERT INTO Restaurants (Name, Email, Password) " +
+            string commandString = "INSERT INTO _User (Name, Email, Password) " +
                 "VALUES (@name, @email, @password);";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@name", rest.Name);
-            command.Parameters.AddWithValue("@type", rest.Email);
-            command.Parameters.AddWithValue("@city", rest.Password);
+            command.Parameters.AddWithValue("@email", rest.Email);
+            command.Parameters.AddWithValue("@password", rest.Password);
            
             connection.Open();
             command.ExecuteNonQuery();
@@ -111,15 +110,6 @@ namespace RestaurantDL
             return rest;
         }
 
-        public Restaurant AddRestaurant(Restaurant rest)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Restaurant> GetAllRestaurants()
-        {
-            throw new NotImplementedException();
-        }
     }
 
 }

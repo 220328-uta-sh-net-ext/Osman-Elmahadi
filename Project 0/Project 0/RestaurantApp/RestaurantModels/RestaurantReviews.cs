@@ -13,7 +13,6 @@ public class RestaurantReviews
          set
         {
 
-
             if (value > 0)
                 rating = value;
             else
@@ -23,11 +22,4 @@ public class RestaurantReviews
 
     public string Note { get; set; }
 
-    public RestaurantReviews()
-    {
-        Name = "Tackle";
-        Rating = 40;
-        Note = " nice staff";
-        
-    }
 }

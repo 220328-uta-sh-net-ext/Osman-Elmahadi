@@ -82,12 +82,10 @@ namespace RestaurantDL
                 restaurants.Add(new Restaurant
                 {
                     Name = reader.GetString(0),
-                    Type = reader.GetString(1),
+                    Reviews = reader.GetString(1),
                     City = reader.GetString(2),
                     State = reader.GetString(3),
-                    Phone = reader.GetInt32(4),
-                    Reviews = reader.GetString(5),
-                    Rating = reader.GetInt32(6)
+                    Rating = reader.GetInt32(4)
                 });
             }
             return restaurants;
@@ -99,17 +97,15 @@ namespace RestaurantDL
         /// <returns></returns>
         public Restaurant AddRestaurant(Restaurant rest)
         {
-            string commandString = "INSERT INTO Restaurants (Name, Type, City, State, Phone, Reviews,Rating) " +
-                "VALUES (@name, @type, @city, @state, @phone, @reviews,@rating);";
+            string commandString = "INSERT INTO Restaurants (Name, Reviews, City, State, Rating)" +
+                "VALUES (@name, @reviews, @city, @state, @rating);";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@name", rest.Name);
-            command.Parameters.AddWithValue("@type", rest.Type);
+            command.Parameters.AddWithValue("@reviews", rest.Reviews);
             command.Parameters.AddWithValue("@city", rest.City);
             command.Parameters.AddWithValue("@state", rest.State);
-            command.Parameters.AddWithValue("@phone", rest.Phone);
-            command.Parameters.AddWithValue("@reviews", rest.Reviews);
             command.Parameters.AddWithValue("@rating", rest.Rating);
             connection.Open();
             command.ExecuteNonQuery();

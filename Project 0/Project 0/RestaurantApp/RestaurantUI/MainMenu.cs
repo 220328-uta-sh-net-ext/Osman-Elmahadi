@@ -8,7 +8,7 @@ class MainMenu : IMenu
         Console.WriteLine("Press <5> Search Restaurant Menu");
         Console.WriteLine("Press <4> Add Restaurants Menu");
         Console.WriteLine("Press <3> Get All Restaurant ");
-        Console.WriteLine("Press <2> Do something else here like add user");
+        //Console.WriteLine("Press <2> Do something else here like add user");
         Console.WriteLine("Press <1> Login");
         Console.WriteLine("Press <0> Exit");
     }
@@ -24,14 +24,16 @@ class MainMenu : IMenu
                 return "Exit";
             case "1":
                 return "Login";
-            case "2":
-                return "Displaying Main menu to the user";
+           // case "2":
+                //return "Displaying Main menu to the user";
             case "3":
                 return "Get All Restaurant ";
             case "4":
                 return "Add Restaurants Menu";
             case "5":
                 return "Search Restaurant Menu";
+            case "6":
+                return "user";
             default:
                 Console.WriteLine("Please input a valid response");
                 Console.WriteLine("Please press <enter> to continue");

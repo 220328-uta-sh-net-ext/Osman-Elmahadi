@@ -5,7 +5,7 @@ using RestaurantModels;
 namespace RestaurantBL;
 public class RestaurantLogic : IRestaurantLogic
 {
-   // const int MaxRestaurants = 4000;
+   
     readonly IRepo repo;
 
     public RestaurantLogic(IRepo repo)
@@ -15,12 +15,7 @@ public class RestaurantLogic : IRestaurantLogic
 
     public Restaurant AddRestaurant(Restaurant r)
     {
-        //var random = new Random();
-        //process data to meet conditions
-        //It will either substract or add a range from -5 to 5
-        // r.Name = random.Next(-5, 5);
-        //r.Rating = random.Next(-5, 5);
-        // r.Note = "";
+       
         return repo.AddRestaurant(r);
 
     }
