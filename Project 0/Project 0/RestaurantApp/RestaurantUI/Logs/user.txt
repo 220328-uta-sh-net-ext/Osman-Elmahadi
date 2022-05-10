@@ -20,3 +20,5 @@
 2022-05-06 10:09:02.185 -05:00 [INF] Restaurant added successfully
 2022-05-07 00:02:12.807 -05:00 [INF] Adding a restaurant -  Aseel
 2022-05-07 00:02:13.005 -05:00 [INF] Restaurant added successfully
+2022-05-08 19:50:05.039 -05:00 [INF] Adding a restaurant -  Salt n straw
+2022-05-08 19:50:05.286 -05:00 [INF] Restaurant added successfully
