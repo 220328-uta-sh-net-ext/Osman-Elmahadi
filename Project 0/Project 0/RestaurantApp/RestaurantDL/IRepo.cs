@@ -21,6 +21,7 @@ namespace RestaurantDL
         /// <returns></returns>
         List<Restaurant> GetAllRestaurants();
 
+
     }
     public interface IuserRepo
     {

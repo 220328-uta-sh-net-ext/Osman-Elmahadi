@@ -122,6 +122,11 @@ namespace RestaurantDL
         {
             throw new NotImplementedException();
         }
+
+        public Task<List<Restaurant>> GetAllRestaurantsAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

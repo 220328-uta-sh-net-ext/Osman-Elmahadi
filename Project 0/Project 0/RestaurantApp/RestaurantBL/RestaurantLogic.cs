@@ -22,7 +22,8 @@ public class RestaurantLogic : IRestaurantLogic
 
     public List<Restaurant> SearchAll()
     {
-        throw new NotImplementedException();
+       return repo.GetAllRestaurants();
+        // throw new NotImplementedException();
     }
 
     public Task<List<Restaurant>> SearchAllAsync()
@@ -36,14 +37,14 @@ public class RestaurantLogic : IRestaurantLogic
         /*var filteredPokemons=from r in restaurants               //Query Syntax
                                 where r.Name.Contains(name)
                                 select r;*/
-        var filteredRestaurants = restaurants.Where(r => r.City.Contains(name)).ToList();
-        if (n == "name")
+        var filteredRestaurants = restaurants.Where(r => r.Name.Contains(name)).ToList();
+        /*if (n == "name")
             filteredRestaurants = restaurants.Where(r => r.Name.Contains(name)).ToList();
         else if (n == "state")
             filteredRestaurants = restaurants.Where(r => r.State.Contains(name)).ToList();
         else if (n == "city")
             filteredRestaurants = restaurants.Where(r => r.City.Contains(name)).ToList();
-        // Method Syntax
+        // Method Syntax*/
 
 
         return filteredRestaurants;

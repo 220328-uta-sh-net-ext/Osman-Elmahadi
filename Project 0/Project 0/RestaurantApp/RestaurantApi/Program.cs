@@ -4,7 +4,6 @@ using RestaurantDL;
 string connectionStringFilePath = "../RestaurantDL/connection-string.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();//This is Middleware
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IRepo>(repo => new SqlRepository(connectionString));
+builder.Services.AddScoped<IRestaurantLogic, RestaurantLogic>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

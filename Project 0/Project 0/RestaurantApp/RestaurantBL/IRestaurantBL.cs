@@ -6,7 +6,7 @@ namespace RestaurantBL;
 /// What kind of processing? That all depends on the type of functionality you will be doing
 /// It can also hold any computation logic like calculating average, max or min values etc....
 /// </summary>
-public interface IRestaurantLogic//:IRestaurantSearch
+public interface IRestaurantLogic:IRestaurantSearch
 {
     /// <summary>
     /// Add Restaurant to the database
@@ -26,12 +26,12 @@ public interface IRestaurantLogic//:IRestaurantSearch
 
 }
 
-/*public interface IRestaurantSearch
+public interface IRestaurantSearch
 {
     /// <summary>
     /// This method returns all the restaurants from the database on Azure Sql. This is an asynchronus method so use await keyword 
     /// </summary>
     /// <returns>List<Restaurants></returns>
-    Task<List<Restaurant>> SearchAllAsync();
+    //Task<List<Restaurant>> SearchAllAsync();
     List<Restaurant> SearchAll();
-}*/
+}

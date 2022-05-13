@@ -14,6 +14,13 @@ namespace RestaurantApi.Controllers
     [ApiController]
     public class RestaurantController : ControllerBase// Controller base class has the logic to interact with HTTP and communication with client
     {
+        private IRestaurantLogic _restBL;
+        public RestaurantController(IRestaurantLogic _restBL)
+          {
+           this._restBL = _restBL;
+          }
+
+
 
         private static List<Restaurant> _restaurants = new List<Restaurant> {
             new Restaurant{ Name="Salt n Straw", Reviews = "", City = "Portland", State = "OR", Rating = 1},
@@ -23,15 +30,16 @@ namespace RestaurantApi.Controllers
         [ProducesResponseType(200, Type=typeof(List<Restaurant>))]
         public ActionResult<List<Restaurant>> Get()
         {
-            return Ok(_restaurants);
+            var restaurants= _restBL.SearchAll();
+            return Ok(restaurants);
         }
         [HttpGet("name")]
         [ProducesResponseType(200, Type = typeof(Restaurant))]
         [ProducesResponseType(404)]
         public ActionResult<Restaurant> Get(string name)// primitive type so model binder will look for these values as querystring
         {
-            var rest = _restaurants.Find(x =>x.Name.Contains(name));
-            if (rest== null)
+            var rest = _restBL.SearchRestaurant(name, name);
+            if (rest.Count<=0)
                 return NotFound($"Restaurant {name} you are looking for is not in the database");
             return Ok(rest);
         }
@@ -44,7 +52,7 @@ namespace RestaurantApi.Controllers
         {
             if (rest == null)
                 return BadRequest("Invalid restaurant, please try again with valid values");
-            _restaurants.Add(rest);
+            _restBL.AddRestaurant(rest);
             return CreatedAtAction("Get",rest);
         }
 
@@ -86,12 +94,12 @@ namespace RestaurantApi.Controllers
 }
    /* {
         //private readonly IJWTManagerRepository repository;
-        private IRestaurantLogic _restBL;
+        
         private IMemoryCache memoryCache;
 
         public RestaurantController(IRestaurantLogic _restBL, IMemoryCache memoryCache)//, IJWTManagerRepository repository)//Constructor dependency
         {
-            this._restBL = _restBL;
+            
             this.memoryCache = memoryCache;
            // this.repository = repository;
         
