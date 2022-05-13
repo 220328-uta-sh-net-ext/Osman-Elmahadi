@@ -6,12 +6,12 @@ namespace RestaurantBL;
 /// What kind of processing? That all depends on the type of functionality you will be doing
 /// It can also hold any computation logic like calculating average, max or min values etc....
 /// </summary>
-public interface IRestaurantLogic
+public interface IRestaurantLogic//:IRestaurantSearch
 {
     /// <summary>
-    /// Add pokemon to the database
+    /// Add Restaurant to the database
     /// initial addition of a pokemon will give some sort of a randon stats
-    /// Can only have a total of 4 pokemons in the Database
+    /// Can only have a total of 4 Restaurants in the Database
     /// </summary>
     /// <param name="r"></param>
     /// <returns></returns>
@@ -25,3 +25,13 @@ public interface IRestaurantLogic
     List<Restaurant> SearchRestaurant(string name, string n);
 
 }
+
+/*public interface IRestaurantSearch
+{
+    /// <summary>
+    /// This method returns all the restaurants from the database on Azure Sql. This is an asynchronus method so use await keyword 
+    /// </summary>
+    /// <returns>List<Restaurants></returns>
+    Task<List<Restaurant>> SearchAllAsync();
+    List<Restaurant> SearchAll();
+}*/

@@ -22,3 +22,5 @@
 2022-05-07 00:02:13.005 -05:00 [INF] Restaurant added successfully
 2022-05-08 19:50:05.039 -05:00 [INF] Adding a restaurant -  Salt n straw
 2022-05-08 19:50:05.286 -05:00 [INF] Restaurant added successfully
+2022-05-10 12:25:55.816 -05:00 [INF] Adding a restaurant -  Subway
+2022-05-10 12:25:56.009 -05:00 [INF] Restaurant added successfully
