@@ -30,9 +30,17 @@ namespace RestaurantApi.Controllers
         [ProducesResponseType(200, Type=typeof(List<Restaurant>))]
         public ActionResult<List<Restaurant>> Get()
         {
-            var restaurants= _restBL.SearchAll();
-            return Ok(restaurants);
+            List<Restaurant> restaurants = new List<Restaurant>();
+            try
+            {
+                restaurants = _restBL.SearchAll();
+            }
+            catch (Exception ex) { 
+                return BadRequest(ex.Message);
+            }
+                return Ok(restaurants);
         }
+
         [HttpGet("name")]
         [ProducesResponseType(200, Type = typeof(Restaurant))]
         [ProducesResponseType(404)]
@@ -108,9 +116,7 @@ namespace RestaurantApi.Controllers
         [Authorize]
         
         {
-            List<Restaurant> restaurants = new List<Restaurant>();
-            try
-            {
+            
                 if (!memoryCache.TryGetValue("restList", out restaurants))
                 {
                     restaurants = _restBL.SearchAll();
@@ -121,9 +127,7 @@ namespace RestaurantApi.Controllers
             {
                 return NotFound(ex.Message);
             }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
+           
             }
             return Ok(restaurants);
         }

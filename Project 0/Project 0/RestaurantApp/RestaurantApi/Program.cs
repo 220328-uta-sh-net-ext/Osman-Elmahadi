@@ -5,10 +5,12 @@ string connectionStringFilePath = "../RestaurantDL/connection-string.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+    options.RespectBrowserAcceptHeader = true
+     )
+    .AddXmlSerializerFormatters();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddEndpointsApiExplorer();//This is Middleware
