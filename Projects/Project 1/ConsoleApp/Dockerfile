@@ -39,7 +39,7 @@ CMD dotnet ConsoleApp.dll 4
 
 
 # commands used in terminal for docker CLI
-# 1. create an image - `docker build -t "image/tag name" -f "Dockerfile"`
+# 1. create an image - `docker build -t "image/tag name" -f Dockerfile .`
 # 2. check if the image is created successfully `docker images`
 # 3. create a container for the image to run and tied/attach the image to the container
 #   `docker create --name "container-name" "image tag" , this command will return the hash of the container created

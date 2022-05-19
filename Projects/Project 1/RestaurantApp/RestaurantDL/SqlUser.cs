@@ -25,42 +25,7 @@ namespace RestaurantDL
         /// Implementation for method that returns all restaurants from the database.
         /// </summary>
         /// <returns></returns>
-        /*public List<Restaurant> GetAllRestaurantsConnected()
-        {
-            string commandString = "SELECT * FROM Restaurant;";
-
-
-            using SqlConnection connection = new(connectionString);
-
-            using IDbCommand command = new SqlCommand(commandString, connection);
-            connection.Open();
-
-            using IDataReader reader = command.ExecuteReader();
-
-            var restaurants = new List<Restaurant>();
-
-            while (reader.Read())
-            {
-
-
-                restaurants.Add(new Restaurant
-                {
-
-                    Name = reader.GetString(0),
-                    Type = reader.GetString(0),
-                    City = reader.GetString(2),
-                    State = reader.GetString(3),
-                    Phone = reader.GetInt32(4),
-                    Reviews = reader.GetInt32(5)
-                });
-            }
-            return restaurants;
-        }
-            /// <summary>
-            /// Implementation for the method that adds restaurants to the SQL database on azure.
-            /// </summary>
-            /// <param name="r"></param>
-            /// <returns></returns>*/
+        
         public List<User> GetAllUsers()
         {
             string commandString = "SELECT * FROM _Users;";

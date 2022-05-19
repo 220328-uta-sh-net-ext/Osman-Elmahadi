@@ -52,8 +52,8 @@ namespace RestaurantApi.Controllers
             }
                 return Ok(restaurants);
         }
-
-        [HttpGet("name")]
+        //Action Methods : ways to access or manipulate the resources, it uses the HTTP Verbs/methods (GET, PUT, POST, DELETE, PATCH, HEAD etc....)
+        [HttpGet("name")]//http method
         [ProducesResponseType(200, Type = typeof(Restaurant))]
         [ProducesResponseType(404)]
         public ActionResult<Restaurant> Get(string name)// primitive type so model binder will look for these values as querystring
@@ -77,7 +77,7 @@ namespace RestaurantApi.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromQuery] Restaurant rest, [FromBody] string name) //non-Default
+        public ActionResult Put([FromBody] Restaurant rest, [FromQuery] string name) //non-Default
         {
             if (name == null)
                 return BadRequest("Cannot modify pokemon without name");
@@ -112,37 +112,4 @@ namespace RestaurantApi.Controllers
         }
     }
 }
-   /* {
-        //private readonly IJWTManagerRepository repository;
-        
-        
-
-        public RestaurantController(IRestaurantLogic _restBL, IMemoryCache memoryCache)//, IJWTManagerRepository repository)//Constructor dependency
-        {
-            
-            
-           // this.repository = repository;
-        
-
-        //Action Methods : ways to access or manipulate the resources, it uses the HTTP Verbs/methods (GET, PUT, POST, DELETE, PATCH, HEAD etc....)
-        [Authorize]
-        
-        {
-            
-                
-                {
-                    restaurants = _restBL.SearchAll();
-                   
-                }
-            }
-            
-            {
-               
-            }
-           
-            }
-            return Ok(restaurants);
-        }
-        
-      }
-}*/
+  
