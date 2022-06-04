@@ -19,8 +19,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore Projects/Restaurant Reviews Projects/RestaurantApp/RestaurantApi
+      run: dotnet restore Projects/RestaurantApp/RestaurantApi
     - name: Build
-      run: dotnet build --no-restore Projects/Restaurant Reviews Projects/RestaurantApp/RestaurantApi
+      run: dotnet build --no-restore Projects/RestaurantApp/RestaurantApi
     - name: Test
-      run: dotnet test --no-build --verbosity normal Projects/Restaurant Reviews Projects/RestaurantApp/RestaurantApi
+      run: dotnet test --no-build --verbosity normal Projects/RestaurantApp/RestaurantApi
